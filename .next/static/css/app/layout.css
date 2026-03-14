@@ -571,6 +571,9 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .visible {
   visibility: visible;
 }
@@ -582,6 +585,9 @@ video {
 }
 .relative {
   position: relative;
+}
+.inset-0 {
+  inset: 0px;
 }
 .-left-32 {
   left: -8rem;
@@ -601,8 +607,14 @@ video {
 .left-4 {
   left: 1rem;
 }
+.right-8 {
+  right: 2rem;
+}
 .top-0 {
   top: 0px;
+}
+.top-1\/2 {
+  top: 50%;
 }
 .top-1\/4 {
   top: 25%;
@@ -615,6 +627,9 @@ video {
 }
 .z-50 {
   z-index: 50;
+}
+.-m-12 {
+  margin: -3rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -824,6 +839,9 @@ video {
 .scale-125 {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @keyframes bounce {
@@ -1398,6 +1416,10 @@ video {
 .ring-offset-1 {
   --tw-ring-offset-width: 1px;
 }
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .blur-\[120px\] {
   --tw-blur: blur(120px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1408,6 +1430,11 @@ video {
 .backdrop-blur-lg {
   --tw-backdrop-blur: blur(16px);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 .transition-all {
   transition-property: all;
@@ -1706,6 +1733,18 @@ body {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:block {
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:right-16 {
+    right: 4rem;
   }
 }
 

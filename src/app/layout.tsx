@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import FloatingGeometry from "@/components/FloatingGeometry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-white text-slate-800 antialiased`}>
         <Navbar />
+        <FloatingGeometry />
         <main>{children}</main>
       </body>
     </html>
