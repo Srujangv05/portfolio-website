@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { projects } from "@/data/resume";
 import { useReveal } from "./useReveal";
 
 export default function Projects() {
-  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
   const { ref, visible } = useReveal();
 
   return (
@@ -23,7 +21,6 @@ export default function Projects() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, i) => {
-              const isExpanded = expandedIdx === i;
               return (
                 <div
                   key={i}
@@ -64,9 +61,7 @@ export default function Projects() {
 
                     {/* Expandable highlights */}
                     <div
-                      className={`overflow-hidden transition-all duration-500 ${
-                        isExpanded ? "max-h-[500px]" : "max-h-0"
-                      }`}
+                      className="overflow-hidden transition-all duration-500 max-h-0 group-hover:max-h-[500px]"
                     >
                       <div className="space-y-2.5 pb-2">
                         {project.highlights.slice(1).map((h, j) => (
@@ -84,35 +79,6 @@ export default function Projects() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Expand button */}
-                    {project.highlights.length > 1 && (
-                      <button
-                        onClick={() =>
-                          setExpandedIdx(isExpanded ? null : i)
-                        }
-                        className="flex items-center gap-1 text-xs text-primary hover:text-accent transition-colors mt-1"
-                      >
-                        <svg
-                          className={`w-4 h-4 transition-transform duration-300 ${
-                            isExpanded ? "rotate-180" : ""
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                        {isExpanded
-                          ? "Show less"
-                          : `Show ${project.highlights.length - 1} more`}
-                      </button>
-                    )}
                   </div>
                 </div>
               );

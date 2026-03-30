@@ -4,7 +4,7 @@ import { personalInfo } from "@/data/resume";
 import { useReveal } from "./useReveal";
 
 const stats = [
-  { value: "2.5+", label: "Years Experience" },
+  { value: "2.8+", label: "Years Experience" },
   { value: "6+", label: "Backend Systems" },
   { value: "13K+", label: "Users Served" },
   { value: "40%", label: "Efficiency Gains" },

@@ -7,7 +7,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/srujangv",
   github: "https://github.com/Srujangv05",
   summary:
-    "Software Engineer specializing in backend development with 2.5 years of experience building scalable platforms and applications with a strong focus on efficiency, reliability, and user impact. Proven ability to own end-to-end product development in startup environments and deliver production-ready systems.",
+    "Software Engineer specializing in backend development with 2.8 years of experience building scalable platforms and applications with a strong focus on efficiency, reliability, and user impact. Proven ability to own end-to-end product development in startup environments and deliver production-ready systems.",
 };
 
 export interface Skill {
