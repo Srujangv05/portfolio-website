@@ -88,19 +88,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Scroll indicator */}
-        <div
-          className={`mt-16 transition-all duration-700 delay-[800ms] ${
-            mounted ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="flex flex-col items-center gap-2 text-slate-400">
-            <span className="text-xs tracking-widest uppercase">Scroll</span>
-            <div className="w-5 h-8 border-2 border-slate-300 rounded-full flex justify-center">
-              <div className="w-1 h-2 bg-slate-400 rounded-full mt-1.5 animate-bounce" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

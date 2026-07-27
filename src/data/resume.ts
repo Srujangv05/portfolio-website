@@ -7,7 +7,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/srujangv",
   github: "https://github.com/Srujangv05",
   summary:
-    "Software Engineer specializing in backend development with 2.8 years of experience building scalable platforms and applications with a strong focus on efficiency, reliability, and user impact. Proven ability to own end-to-end product development in startup environments and deliver production-ready systems.",
+    "Software Engineer specializing in backend development with 3 years of experience building scalable platforms and applications with a strong focus on efficiency, reliability, and user impact. Proven ability to own end-to-end product development in startup environments and deliver production-ready systems.",
 };
 
 export interface Skill {
@@ -104,7 +104,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Rewards and Recognition Platform",
-    techStack: ["Node.js", "PostgreSQL", "Redis", "AWS"],
+    techStack: ["Node.js", "React.js", "PostgreSQL", "Redis", "AWS"],
     highlights: [
       "Multi-tenant SaaS platform supporting 13,000+ users for managing employee recognition programs.",
       "Tenant-level data isolation with scoped RBAC and schema-level partitioning.",
@@ -139,7 +139,7 @@ export const projects: Project[] = [
   },
   {
     title: "B2B E-commerce Platform",
-    techStack: ["Node.js", "Express.js", "MySQL", "Redis", "AWS"],
+    techStack: ["Node.js", "Express.js", "React.js", "MySQL", "Redis", "AWS"],
     highlights: [
       "Robust backend architecture with user-friendly admin and vendor interfaces; reduced response times by 40% during peak hours.",
       "Integrated PhonePe, Cashfree, and Zoho, improving payment processing efficiency by 30%.",
